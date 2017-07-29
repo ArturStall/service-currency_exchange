@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0"
+	name="service-currency_exchange">
+	<repository>mvn:org.apache.cxf.karaf/apache-cxf/3.1.12/xml/features
+	</repository>
+	<feature name="service-currency_exchange-feature" description="service-currency_exchange-feature"
+		version="0.9.1">
+		<feature prerequisite="true" dependency="false">wrap</feature>
+		<feature prerequisite="true" version="3.1.12">cxf</feature>
+		<feature prerequisite="true" version="3.1.12">cxf-http</feature>
+		<feature prerequisite="true" version="3.1.12">cxf-jaxws</feature>
+		<bundle>mvn:by.gsu.epamlab/service-currency_exchange-bundle/0.9.1
+		</bundle>
+	</feature>
+</features>
